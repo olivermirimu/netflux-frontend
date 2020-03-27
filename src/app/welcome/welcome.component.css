@@ -1,0 +1,47 @@
+.coverText {
+  margin: auto 0 !important;
+}
+
+.coverImage {
+  max-height: 560px;
+}
+
+.welcomeBtn {
+  float: right !important;
+}
+
+.niche,
+.genres {
+  margin: 30px auto;
+}
+
+.benefits {
+  max-height: auto;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.carousel-item img {
+  max-height: 560px;
+}
+
+.niche-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.niche-specific {
+  text-align: center;
+  margin: 0.5em;
+  width: 18rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.welcomeBtn button {
+  display: inline-block;
+  background: #4d5250;
+  margin: 0 5px;
+}

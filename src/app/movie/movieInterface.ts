@@ -6,7 +6,7 @@ export interface MovieInterface {
     genre: string;
     director: string;
     writer: string;
-    Actors?: string[];
+    actors?: string[];
     plot?: string;
     awards?: string;
     imageUrl: string;

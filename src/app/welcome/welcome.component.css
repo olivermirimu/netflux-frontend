@@ -1,23 +1,15 @@
-.coverText {
-  margin: auto 0 !important;
-}
-
 .coverImage {
   max-height: 560px;
 }
 
 .welcomeBtn {
-  float: right !important;
-}
-
-.niche,
-.genres {
-  margin: 30px auto;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .benefits {
   max-height: auto;
-  margin: 0.5em;
+  margin: 0.5em 0.5em;
   padding: 0.5em;
 }
 
@@ -31,6 +23,7 @@
 }
 
 .niche-specific {
+  max-width: 12rem;
   text-align: center;
   margin: 0.5em;
   width: 18rem;
@@ -41,7 +34,22 @@ h2 {
 }
 
 .welcomeBtn button {
-  display: inline-block;
-  background: #4d5250;
   margin: 0 5px;
+}
+
+@media(max-width: 580px) {
+  .nichesingle {
+    display: flex !important;
+  }
+
+  .benefits {
+    /* margin: 5px auto; */
+    max-width: 8rem;
+    display: inline-block;
+    padding: 2px;
+  }
+
+  .niche-specific {
+    max-width: 7rem;
+  }
 }

@@ -1,6 +1,6 @@
 .thumb {
   max-height: auto;
-  max-width: 10rem;
+  max-width: 8.8rem;
   margin: 0.5em;
 }
 
@@ -10,4 +10,9 @@
 
 .movies {
   margin: 20px 0px;
+}
+
+.card-text {
+  padding: 2px;
+  text-align: center;
 }

@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary m-x-1">
   <a class="navbar-brand" href="#">NETFLUX</a>
   <div class="welcomeBtn my-2 my-lg-0 ">
-    <button class="btn btn-primary" [routerLink]="['/sign-up']">Sign Up</button>
-    <button class="btn btn-primary" [routerLink]="['/log-in']">Log In</button>
+    <button class="btn btn-dark" [routerLink]="['/sign-up']">Sign Up</button>
+    <button class="btn btn-dark" [routerLink]="['/log-in']">Log In</button>
   </div>
 </nav>
 
 <section class="welcome">
   <div class="card bg-dark text-black">
     <img [src]="coverImages.head" class="card-img coverImage" alt="...">
-    <div class="card-img-overlay coverText">
+    <!-- <div class="card-img-overlay coverText">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">Sign Up now and get to Enjoy endless hours of your favourite tv shows</p>
-    </div>
+    </div> -->
   </div>
 </section>
 <section class="genres container">
@@ -60,9 +60,10 @@
     </div>
   </div>
 </section>
+
 <section class="niches container-fluid">
   <h2>Benefits</h2>
-  <div class="niche row">
+  <div class="niche nicheSingle justify-content-center row">
     <div class="benefits col-sm-auto" *ngFor="let niche of niches">
       <div class="niche-specific">
         <img [src]="niche.image" alt="" class="niche-image">
@@ -70,46 +71,6 @@
       </div>
     </div>
   </div>
-  <!--   
-  <div id="carouselExampleSlidesOnly" class="carousel slide nicheSlide col-md-auto" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-    </div>
-  </div>
-  <div id="carouselExampleSlidesOnly" class="carousel slide nicheSlide col-md-auto" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-    </div>
-  </div>
-  <div id="carouselExampleSlidesOnly" class="carousel slide nicheSlide col-md-auto" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img [src]="coverImages.niche1" class="d-block w-100" alt="...">
-      </div>
-    </div>
-  </div> -->
 </section>
 <netflux-footer>
   <netflux-footer>

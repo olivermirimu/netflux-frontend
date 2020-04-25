@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../movie/movie.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MovieInterface } from '../movie/movieInterface';
-import { Observable } from 'rxjs';
+import { UserService } from '../user/user.service';
 
 @Component({
   selector: 'netflux-home',
@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   list: MovieInterface[];
   movieTitle: any;
   isSelected: any;
-  constructor(private movieService: MovieService, private route: ActivatedRoute, private router: Router) {
+  constructor(private movieService: MovieService, private route: ActivatedRoute, private router: Router, private userService: UserService) {
     this.movieService.getMovies().subscribe(movies => {
       this.list = movies;
     }, err => console.error(err));
@@ -28,5 +28,6 @@ export class HomeComponent implements OnInit {
     this.movieService.getDetails(title);
   }
   ngOnInit() {
+
   }
 }

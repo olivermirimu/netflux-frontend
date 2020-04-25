@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -49,7 +51,13 @@ import { GenreComponent } from './movie/genre/genre.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    StoreModule.forRoot({}),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    StoreDevtoolsModule.instrument({
+      name: `Netflux Devtools`,
+      maxAge: 25,
+      logOnly: environment.production
+    })
   ],
   providers: [MovieService, AuthService],
   bootstrap: [AppComponent]

@@ -14,15 +14,15 @@ export class WelcomeComponent implements OnInit {
     drama: '/assets/infinityWarC.jpg',
     comedy: '/assets/farFromHomeC1.jpg',
     action: '/assets/farFromHomeC.jpg',
-    niche1: '/assets/batwoman.jpg',
-    niche2: '/assets/batwoman.jpg',
-    niche3: '/assets/batwoman.jpg',
+    niche1: '/assets/mobility.png',
+    niche2: '/assets/synchronized.jpg',
+    niche3: '/assets/affordable.jpg',
     boilerplate: '/assets/random.png'
   };
   niches = [
-    { name: '', text: 'niche 1', image: this.coverImages.niche1 },
-    { name: '', text: 'niche 2', image: this.coverImages.niche2 },
-    { name: '', text: 'niche 3', image: this.coverImages.niche3 }
+    { name: 'Mobile', text: 'Watch On The Go', image: this.coverImages.niche1 },
+    { name: 'Syncing', text: 'Cross Device Sync', image: this.coverImages.niche2 },
+    { name: 'Affordable', text: 'Dont Hurt Your Pockets', image: this.coverImages.niche3 }
   ];
   ngOnInit() {
   }

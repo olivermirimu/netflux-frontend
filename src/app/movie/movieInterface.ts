@@ -12,3 +12,8 @@ export interface MovieInterface {
     imageUrl: string;
     cover: string;
 }
+
+export interface MovieResolved {
+    movie: MovieInterface;
+    error?: any;
+}

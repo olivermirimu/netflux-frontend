@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
 
+
 const api = environment.apiUrl;
 @Injectable({
   providedIn: 'root'
@@ -29,11 +30,10 @@ export class UserService {
         alert(`Hello ${user[0].firstName} Welcome back`);
         this.loggedInUser = user[0];
       } else {
-        this.isAuthenticated = false;
+        return;
       }
     }).catch((err: any) => {
       throw new Error(err);
-      this.isAuthenticated = false;
     });
     this.isAuthenticated ? this.router.navigate(['/home']) : alert(`Sorry password or email you entered is incorect`);
   }
@@ -43,5 +43,8 @@ export class UserService {
   saveUser(user: UserInterface): Observable<UserInterface> {
     const options = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
     return this.http.post<UserInterface>(`${api}api/users`, user, options);
+  }
+  addToFavourites(title) {
+    // this.http.patch();
   }
 }

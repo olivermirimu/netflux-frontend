@@ -1,3 +1,7 @@
+* {
+  color: black;
+}
+
 .movieDetails>div {
   display: inline-block;
 }
@@ -17,4 +21,8 @@
 
 .cover-image {
   max-height: 28em;
+}
+
+.options{
+  padding: 5px;
 }

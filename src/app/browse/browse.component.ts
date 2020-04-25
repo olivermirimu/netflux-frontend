@@ -15,9 +15,9 @@ export class BrowseComponent implements OnInit {
   constructor(private movieService: MovieService, private route: ActivatedRoute, private router: Router) {
     this.list = this.movieService.getMovies();
   }
+
   getDetails(title) {
     this.isSelected = title;
-    console.log(this.isSelected);
     this.router.navigate(['/movie', this.isSelected]);
   }
 

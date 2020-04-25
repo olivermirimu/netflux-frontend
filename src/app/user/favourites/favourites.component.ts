@@ -24,7 +24,7 @@ export class FavouritesComponent implements OnInit {
   }
 
   fetchMovies() {
-    for (let title of this.titles) {
+    for (const title of this.titles) {
       this.movieService.getMovie(title).subscribe((movie: MovieInterface) => {
         if (movie !== null) {
           this.list = this.list.concat(movie);

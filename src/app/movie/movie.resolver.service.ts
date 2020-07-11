@@ -13,6 +13,11 @@ export class MovieResolver {
   // implements Resolve<MovieResolved>
   constructor(private movieService: MovieService) { }
 
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<MovieResolved> {
+    const title = route.paramMap.get('title');
+    return this.movieService.getMovie(title).pipe(catchError(err => of(err)));
+  }
+
   // resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<MovieResolved> {
   //   const title = route.paramMap.get('title');
   //   console.log(title);
@@ -24,5 +29,4 @@ export class MovieResolver {
   //       })
   //     );
   // }
-  return;
 }

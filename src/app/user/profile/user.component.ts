@@ -15,8 +15,6 @@ export class UserComponent implements OnInit {
     lastName: null,
     email: null,
     favourites: [],
-    // subscription: null,
-    // card: null,
     password: null,
     confirmPassword: null,
     tnC: null

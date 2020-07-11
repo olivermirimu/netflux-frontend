@@ -17,6 +17,7 @@ export class MovieService {
 
   getMovies(): Observable<MovieInterface[]> {
     return this.http.get<MovieInterface[]>(`${api}api/movies`)
+      // TODO: catchError return value
       .pipe(catchError(this.handleErrors<MovieInterface[]>('getMovies', [])));
   }
   // TODO: change api calls toLocalLowercase: compartibility issues

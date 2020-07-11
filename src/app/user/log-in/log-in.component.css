@@ -9,3 +9,9 @@ button {
 .logForm {
   margin: auto;
 }
+
+.header {
+  padding: 0.2em;
+  margin: 0 0 0.8em 0;
+  width: 100%;
+}

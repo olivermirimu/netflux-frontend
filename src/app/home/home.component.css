@@ -28,3 +28,9 @@ header {
   text-align: center;
   bottom: 0;
 }
+
+@media(max-width:768px) {
+  .home-slider {
+    display: none;
+  }
+}

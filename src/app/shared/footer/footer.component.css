@@ -15,3 +15,19 @@ footer {
 .links {
   margin: 0 auto;
 }
+
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.email {
+  color: #6ed926;
+  fill: #6ed926;
+}

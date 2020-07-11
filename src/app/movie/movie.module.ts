@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MovieComponent } from './movie.component';
 import { GenreComponent } from './genre/genre.component';
-import { MovieResolver } from './movie.resolver';
+import { MovieResolver } from './movie.resolver.service';
 
 
 

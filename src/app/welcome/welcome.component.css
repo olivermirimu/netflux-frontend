@@ -17,13 +17,9 @@ section {
   padding: 0.5em;
 }
 
-.carousel-item img {
-  max-height: 560px;
-}
-
 .niche-image {
-  max-width: 100%;
-  height: auto;
+  width: 11em;
+  height: 10em;
   border-radius: 50%;
 }
 
@@ -38,28 +34,19 @@ section {
   padding: 5px 0;
 }
 
-h2 {
-  text-align: center;
-  font-weight: bold;
-}
-
 .welcomeBtn button {
   margin: 0 5px;
 }
 
 @media(max-width: 580px) {
-  .nichesingle {
-    display: flex !important;
+  .niche-single {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .benefits {
-    /* margin: 5px auto; */
-    max-width: 8rem;
     display: inline-block;
     padding: 2px;
-  }
-
-  .niche-specific {
-    max-width: 7rem;
   }
 }

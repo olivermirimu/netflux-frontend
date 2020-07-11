@@ -1,6 +1,8 @@
-<section class="container logForm">
-  <h1>Log in</h1>
-  <form #logForm="ngForm" (ngSubmit)="onSubmit(logForm)">
+<section class="logForm">
+  <div class="header bg-primary section-header">
+    <h1>Log in</h1>
+  </div>
+  <form #logForm="ngForm" (ngSubmit)="onSubmit(logForm)" class="container-fluid">
     <div class="form-group col-sm-6">
       <label for="email">Email address</label>
       <input type="email" class="form-control" id="email" name="email" [(ngModel)]="log.email" required
